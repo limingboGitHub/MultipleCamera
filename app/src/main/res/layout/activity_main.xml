@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.multiplecamera.MainActivity">
+
+    <TextView
+        android:id="@+id/preview1_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="logical camera"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@id/preview_sv"
+        app:layout_constraintEnd_toEndOf="@id/preview_sv"/>
+    <SurfaceView
+        android:id="@+id/preview_sv"
+        android:layout_width="162dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preview1_tv"/>
+
+    <TextView
+        android:id="@+id/preview2_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="physical camera01"
+        app:layout_constraintTop_toBottomOf="@id/preview_sv"
+        app:layout_constraintStart_toStartOf="@id/preview2_sv"
+        app:layout_constraintEnd_toEndOf="@id/preview2_sv"/>
+    <SurfaceView
+        android:id="@+id/preview2_sv"
+        android:layout_width="162dp"
+        android:layout_height="288dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preview2_tv"/>
+
+    <TextView
+        android:id="@+id/preview3_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="physical camera02"
+        app:layout_constraintTop_toBottomOf="@id/preview_sv"
+        app:layout_constraintStart_toStartOf="@id/preview3_sv"
+        app:layout_constraintEnd_toEndOf="@id/preview3_sv"/>
+    <SurfaceView
+        android:id="@+id/preview3_sv"
+        android:layout_width="162dp"
+        android:layout_height="288dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/preview3_tv"/>
+
+
+    <Button
+        android:id="@+id/start_preview_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_preview"
+        android:onClick="onClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</android.support.constraint.ConstraintLayout>

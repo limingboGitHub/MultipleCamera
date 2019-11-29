@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MultipleCamera</string>
+    <string name="open_camera_error">打开相机失败</string>
+    <string name="start_preview">开始预览</string>
+    <string name="please_open_camera_permission">请打开相机权限</string>
+</resources>
